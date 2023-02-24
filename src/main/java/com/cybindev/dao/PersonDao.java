@@ -8,8 +8,10 @@ import javax.transaction.Transactional;
 
 @Transactional
 public class PersonDao implements IPersonDao {
+    
     @Autowired
     private HibernateTemplate hibernateTemplate;
+    
     public void savePerson() {
         Person person = new Person();
         person.setId(1);
